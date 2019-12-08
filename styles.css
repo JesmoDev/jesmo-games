@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  background-color: #292929;
+}
+
+.jumbotron {
+  background-color: #202020;
+}
+
+.jumbotron .content {
+  padding: 64px 0;
+  width: 50%;
+  margin: auto;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  margin-bottom: 32px;
+  color: #aeaeae;
+}
+
+.jumbotron.name {
+  color: #60b196;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+  color: #8a8a8a;
+}
+
+.wrapper {
+  margin: auto;
+  width: 50%;
+}
+
+.game-link {
+  position: relative;
+  background-color: #202020;
+  height: 300px;
+  margin: 32px 0;
+}
+
+.game-text {
+  width: 50%;
+  padding: 32px;
+  color: #aeaeae;
+}
+
+.game-text .title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  color: #aeaeae;
+}
+
+.game-text .description {
+  color: #8a8a8a;
+}
+
+.game-picture {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.game-picture img {
+  max-width: 100%;
+  max-height: 100%;
+  float: right;
+}
