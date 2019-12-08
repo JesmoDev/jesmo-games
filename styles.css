@@ -14,15 +14,16 @@ a {
 
 html,
 body {
-  background-color: #292929;
+  background-color: #171717;
 }
 
 .jumbotron {
   background-color: #202020;
+  box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 .jumbotron .content {
-  padding: 64px 0;
+  padding: 64px 0 16px 0;
   width: 50%;
   margin: auto;
 }
@@ -30,16 +31,16 @@ body {
 .jumbotron h1 {
   font-size: 3rem;
   margin-bottom: 32px;
-  color: #aeaeae;
+  color: #ddd;
 }
 
-.jumbotron.name {
+.jumbotron .name {
   color: #60b196;
 }
 
 .jumbotron p {
-  font-size: 1.5rem;
-  color: #8a8a8a;
+  font-size: 1.3rem;
+  color: #aeaeae;
 }
 
 .wrapper {
@@ -47,27 +48,51 @@ body {
   width: 50%;
 }
 
+.socials-youtube {
+  margin-top: 32px;
+  display: inline-block;
+  color: white;
+}
+
+.socials-youtube span {
+  display: inline-block;
+  color: white;
+  transform: translate(0, -50%);
+  margin-left: 12px;
+}
+
 .game-link {
+  transition: all 100ms ease-out;
   position: relative;
   background-color: #202020;
   height: 300px;
   margin: 32px 0;
+  box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.game-link:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 16px 28px -10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.005);
 }
 
 .game-text {
   width: 50%;
   padding: 32px;
-  color: #aeaeae;
 }
 
 .game-text .title {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #ddd;
+}
+
+.game-text .engine {
   margin-bottom: 32px;
-  color: #aeaeae;
+  color: #555555;
 }
 
 .game-text .description {
-  color: #8a8a8a;
+  color: #aeaeae;
 }
 
 .game-picture {
