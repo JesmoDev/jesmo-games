@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | Flip</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/FlipGame WebGL 3.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/FlipGame WebGL 2.json",
+        { onProgress: UnityProgress }
+      );
     </script>
   </head>
   <body>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
-        <div class="webgl-logo"></div>
+        <!-- <div class="webgl-logo"></div> -->
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Flip</div>
       </div>
+    </div>
+    <div class="game-description">
+      <div class="game-controls">
+        <div class="game-control">A or ARROW LEFT <span>Move left</span></div>
+        <div class="game-control">D or ARROW RIGHT <span>Move right</span></div>
+        <div class="game-control">SPACE <span>Jump</span></div>
+        <div class="game-control">R <span>Restart level</span></div>
+        <div class="game-control">ESC <span>Open menu</span></div>
+      </div>
+    </div>
+
+    <div class="game-portfolio">
+      If you want to know more about the development and thoughts behind FLIP,
+      you can look at the portfolio for my 4th Semester Specialization project
+      where I have a few posts about the creation of FLIP:
+      <a href="https://jesper-portfolio.web.app/">Portfolio</a> <br />
+      it is, however, written in danish.
     </div>
   </body>
 </html>
